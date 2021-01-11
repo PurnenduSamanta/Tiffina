@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:fillViewport="true"
+    tools:context=".LoginWithMobileActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/bg4"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/scooter"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:paddingVertical="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="LOGIN"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingVertical="5dp"
+            android:textColor="@color/black"
+            android:text="Enter Your Mobile Number"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:textColor="@color/black"
+            android:lines="1"
+            android:hint="+91"
+            android:id="@+id/number"
+            android:textColorHint="@color/black"
+            android:background="@drawable/c_w_l"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:paddingVertical="5dp"
+            android:hint="Password"
+            android:lines="1"
+            android:id="@+id/password"
+            android:textColorHint="@color/black"
+            android:background="@drawable/c_w_l"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:id="@+id/proceed"
+            android:textColor="@color/white"
+            android:background="@drawable/get_started"
+            android:text="PROCEED"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+</ScrollView>
